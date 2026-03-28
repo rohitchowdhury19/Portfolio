@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react";
+import Image from "next/image";
 import ProfilePhoto from "./components/ProfilePhoto"; // Assuming these component paths are correct
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
@@ -81,10 +82,12 @@ export default function Home() {
       
       {/* Left Image */}
       <div className="flex-shrink-0">
-        <img
-          src="bat-l.png" // Replace with your left image path
+        <Image
+          src="/bat-l.png" // Replace with your left image path
           alt="Left Decorative"
-          className="w-45 h-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
+          width={180}
+          height={180}
+          className="opacity-70 hover:opacity-100 transition-opacity duration-300 w-auto h-auto"
         />
       </div>
 
@@ -144,10 +147,12 @@ export default function Home() {
 
       {/* Right Image */}
       <div className="flex-shrink-0">
-        <img
+        <Image
           src="/bat-r.png" // Replace with your right image path
           alt="Right Decorative"
-          className="w-45 h-auto opacity-70 hover:opacity-100 transition-opacity duration-300"
+          width={180}
+          height={180}
+          className="opacity-70 hover:opacity-100 transition-opacity duration-300 w-auto h-auto"
         />
       </div>
     </div>

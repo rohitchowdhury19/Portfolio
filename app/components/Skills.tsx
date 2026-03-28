@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 import Section from "./Section"
 
 // Core technical skills with proficiency levels
@@ -115,9 +116,11 @@ export default function Skills() {
               </div>
             ))}
           </div>
-          <img
+          <Image
             src="/type.png"
             alt="Typing"
+            width={600}
+            height={300}
             className="w-full h-auto mt-8 opacity-70 hover:opacity-100 transition-opacity duration-300"
           />
         </div>

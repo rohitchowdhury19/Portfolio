@@ -3,6 +3,7 @@
 import type React from "react"
 import { useState } from "react"
 import { motion } from "framer-motion"
+import Image from "next/image"
 import { Mail, Phone, MapPin, Send } from "lucide-react"
 import Section from "./Section"
 
@@ -124,10 +125,12 @@ export default function ContactMe() {
         </div>
 
         <div>
-          <img
+          <Image
             src="/phone.png"
             alt="Phone"
-            className="w-3/4 max-w-xs md:max-w-sm rounded-lg shadow-md opacity-70 hover:opacity-100"
+            width={400}
+            height={400}
+            className="w-3/4 max-w-xs md:max-w-sm rounded-lg shadow-md opacity-70 hover:opacity-100 h-auto"
           />
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>

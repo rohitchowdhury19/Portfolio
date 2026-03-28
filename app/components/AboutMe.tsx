@@ -1,4 +1,5 @@
 import { GraduationCap, Award } from "lucide-react";
+import Image from "next/image";
 import Section from "./Section";
 
 export default function AboutMe() {
@@ -8,9 +9,11 @@ export default function AboutMe() {
 
         {/* Left: Bio */}
         <div className="space-y-4">
-          <img
+          <Image
             src="/dev-space.png"
             alt="Developer Workspace"
+            width={800}
+            height={450}
             className="w-full h-auto rounded-lg shadow-md mb-4"
           />
           <p className="text-lg leading-relaxed">

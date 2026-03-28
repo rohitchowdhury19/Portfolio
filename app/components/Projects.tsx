@@ -126,19 +126,23 @@ export default function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
         {/* Left Column Image */}
         <div>
-          <img
+          <Image
             src="/robot-talk.png"
             alt="Developer Workspace Left View"
-            className="w-3/4 max-w-xs md:max-w-sm rounded-lg"
+            width={400}
+            height={300}
+            className="w-3/4 max-w-xs md:max-w-sm rounded-lg h-auto"
           />
         </div>
 
         {/* Right Column Image */}
         <div>
-          <img
+          <Image
             src="/droid.png"
             alt="Developer Workspace Right View"
-            className="w-3/4 max-w-xs md:max-w-sm rounded-lg"
+            width={400}
+            height={300}
+            className="w-3/4 max-w-xs md:max-w-sm rounded-lg h-auto"
           />
         </div>
       </div>
